@@ -1,0 +1,47 @@
+{
+  "name": "moonwave-gitlab",
+  "version": "1.4.1",
+  "description": "moonwave cli",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "tsc --watch",
+    "tsc": "tsc"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "bin": {
+    "moonwave": "dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sqikerz/moonwave.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sqikerz/moonwave/issues"
+  },
+  "homepage": "https://github.com/sqikerz/moonwave#readme",
+  "type": "module",
+  "dependencies": {
+    "cachedir": "^2.3.0",
+    "chokidar": "^4.0.1",
+    "fs-extra": "^11.2.0",
+    "gh-pages": "^6.3.0",
+    "node-fetch": "^3.2.6",
+    "parse-git-config": "^3.0.0",
+    "toml": "^3.0.0",
+    "unzipper": "^0.12.3",
+    "yargs": "^17.5.1"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^11.0.4",
+    "@types/gh-pages": "^6.1.0",
+    "@types/node": "^22.9.0",
+    "@types/parse-git-config": "^3.0.1",
+    "@types/unzipper": "^0.10.5",
+    "@types/yargs": "^17.0.10",
+    "typescript": "^5.4.5"
+  }
+}

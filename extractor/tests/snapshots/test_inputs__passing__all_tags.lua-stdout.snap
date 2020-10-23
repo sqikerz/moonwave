@@ -1,0 +1,304 @@
+---
+source: tests/test-inputs.rs
+expression: stdout
+---
+[
+  {
+    "functions": [
+      {
+        "name": "comingSoon",
+        "desc": "",
+        "params": [],
+        "returns": [],
+        "function_type": "static",
+        "unreleased": true,
+        "source": {
+          "line": 57,
+          "path": ""
+        }
+      }
+    ],
+    "properties": [
+      {
+        "name": "notReady",
+        "desc": "",
+        "lua_type": "boolean",
+        "unreleased": true,
+        "source": {
+          "line": 77,
+          "path": ""
+        }
+      }
+    ],
+    "types": [
+      {
+        "name": "nilOrVector",
+        "desc": "We are still experimenting with vector technology.",
+        "lua_type": "nil | vector",
+        "unreleased": true,
+        "source": {
+          "line": 98,
+          "path": ""
+        }
+      },
+      {
+        "name": "Command2",
+        "desc": "We have fixed recursion! Unfortunately, it comes at the cost of groups.",
+        "fields": [
+          {
+            "name": "Name",
+            "lua_type": "string",
+            "desc": "The name of the command."
+          },
+          {
+            "name": "Recursion",
+            "lua_type": "Command2",
+            "desc": "No longer breaks the universe."
+          },
+          {
+            "name": "Promise",
+            "lua_type": "Promise",
+            "desc": "A reference to the Promise library."
+          },
+          {
+            "name": "Status",
+            "lua_type": "Status",
+            "desc": "The status of the internal promise."
+          }
+        ],
+        "unreleased": true,
+        "source": {
+          "line": 132,
+          "path": ""
+        }
+      }
+    ],
+    "name": "Bar",
+    "desc": "",
+    "unreleased": true,
+    "source": {
+      "line": 25,
+      "path": ""
+    }
+  },
+  {
+    "functions": [
+      {
+        "name": "new",
+        "desc": "This function creates a new Foo",
+        "params": [
+          {
+            "name": "a",
+            "desc": "param a",
+            "lua_type": "A A A"
+          },
+          {
+            "name": "b",
+            "desc": "param b",
+            "lua_type": "B B B"
+          },
+          {
+            "name": "promise",
+            "desc": "external param",
+            "lua_type": "Promise"
+          },
+          {
+            "name": "status",
+            "desc": "external param",
+            "lua_type": "Status"
+          }
+        ],
+        "returns": [
+          {
+            "desc": "return a",
+            "lua_type": "a"
+          },
+          {
+            "desc": "return b",
+            "lua_type": "b"
+          },
+          {
+            "desc": "return external type",
+            "lua_type": "Promise"
+          },
+          {
+            "desc": "return external type",
+            "lua_type": "Status"
+          }
+        ],
+        "function_type": "static",
+        "tags": [
+          "uno",
+          "dos"
+        ],
+        "external_types": [
+          {
+            "name": "Promise",
+            "url": "https://eryn.io/roblox-lua-promise/api/Promise"
+          },
+          {
+            "name": "Status",
+            "url": "https://eryn.io/roblox-lua-promise/api/Promise#Status"
+          }
+        ],
+        "errors": [
+          {
+            "lua_type": "c",
+            "desc": "this errors sometimes. shrug"
+          }
+        ],
+        "realm": [
+          "Client",
+          "Server"
+        ],
+        "since": "v1.23",
+        "deprecated": {
+          "version": "v1.5",
+          "desc": "Use something else"
+        },
+        "private": true,
+        "yields": true,
+        "ignore": true,
+        "source": {
+          "line": 52,
+          "path": ""
+        }
+      }
+    ],
+    "properties": [
+      {
+        "name": "ready",
+        "desc": "",
+        "lua_type": "boolean",
+        "tags": [
+          "salad",
+          "fries",
+          "nuggets"
+        ],
+        "realm": [
+          "Client",
+          "Server"
+        ],
+        "since": "v0.1.1",
+        "deprecated": {
+          "version": "v1.3",
+          "desc": "Use blah"
+        },
+        "private": true,
+        "readonly": true,
+        "ignore": true,
+        "source": {
+          "line": 72,
+          "path": ""
+        }
+      }
+    ],
+    "types": [
+      {
+        "name": "nilOrNumber",
+        "desc": "Nil or number matey",
+        "lua_type": "nil | number",
+        "tags": [
+          "arrgh",
+          "yarr"
+        ],
+        "since": "v0.1.0",
+        "deprecated": {
+          "version": "v2.0.0",
+          "desc": "We have finally removed all optional values from the library."
+        },
+        "private": true,
+        "ignore": true,
+        "source": {
+          "line": 90,
+          "path": ""
+        }
+      },
+      {
+        "name": "Command",
+        "desc": "An object describing a command",
+        "fields": [
+          {
+            "name": "Name",
+            "lua_type": "string",
+            "desc": "the name of the command"
+          },
+          {
+            "name": "Groups",
+            "lua_type": "array<string>",
+            "desc": "A list of groups that the command contains"
+          },
+          {
+            "name": "Recursion",
+            "lua_type": "Command",
+            "desc": "This breaks the universe"
+          },
+          {
+            "name": "Promise",
+            "lua_type": "Promise",
+            "desc": "This is a Promise"
+          },
+          {
+            "name": "Status",
+            "lua_type": "Status",
+            "desc": "Let's ignore that Promise:getStatus() exists"
+          }
+        ],
+        "tags": [
+          "cmdr",
+          "lua"
+        ],
+        "external_types": [
+          {
+            "name": "OtherExample",
+            "url": "www.example.com"
+          },
+          {
+            "name": "AnotherExample",
+            "url": "www.example.com"
+          }
+        ],
+        "since": "v0.7.2",
+        "deprecated": {
+          "version": "v0.7.3",
+          "desc": "Adding something that can break the universe was not such a good idea."
+        },
+        "private": true,
+        "ignore": true,
+        "source": {
+          "line": 119,
+          "path": ""
+        }
+      }
+    ],
+    "name": "Foo",
+    "desc": "Here's a description for you\n\n:::info\nwith an admonition\n:::",
+    "tags": [
+      "bark",
+      "meow",
+      "rawr"
+    ],
+    "external_types": [
+      {
+        "name": "example",
+        "url": "www.example.com"
+      }
+    ],
+    "realm": [
+      "Client",
+      "Server",
+      "Plugin"
+    ],
+    "deprecated": {
+      "version": "v1.2",
+      "desc": "Use x instead"
+    },
+    "since": "v1.0",
+    "private": true,
+    "ignore": true,
+    "source": {
+      "line": 21,
+      "path": ""
+    }
+  }
+]
