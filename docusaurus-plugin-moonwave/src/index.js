@@ -221,9 +221,8 @@ async function generateTypeLinks(nameSet, luaClasses, baseUrl) {
     .forEach((luaClass) =>
       luaClass.types.forEach(
         (type) =>
-          (classTypesNames[
-            type.name
-          ] = `${baseUrl}api/${luaClass.name}#${type.name}`)
+          (classTypesNames[type.name] =
+            `${baseUrl}api/${luaClass.name}#${type.name}`)
       )
     )
 
@@ -260,7 +259,7 @@ async function generateTypeLinks(nameSet, luaClasses, baseUrl) {
 }
 
 export default (context, options) => ({
-  name: "docusaurus-plugin-moonwave",
+  name: "docusaurus-plugin-moonwave-gitlab",
 
   getThemePath() {
     return resolve(__dirname, "./theme")
