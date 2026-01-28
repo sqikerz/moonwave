@@ -114,7 +114,8 @@ export default function getDocusaurusConfig({
         {
           id: "moonwave",
           code: validCodePaths,
-          sourceUrl: gitRepoUrl + `-/blob/${config.gitSourceBranch ?? "main"}`,
+          sourceUrl:
+            gitRepoUrl + `/-/blob/${config.gitSourceBranch ?? "main"}/`,
           projectDir,
           classOrder,
           apiCategories,
